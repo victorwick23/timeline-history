@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Hex values inlined so Tailwind utilities never inherit stale/generated :root defaults. */
+@theme inline {
+  --color-background: #0b0e14;
+  --color-foreground: #f0f0f0;
+  --color-cream: #151a24;
+  --color-paper: #161b26;
+  /* Lifted surface for timeline popovers (brighter than panels). */
+  --color-event-panel: #2a3348;
+  --color-paper-border: #1f2937;
+  --color-ink: #f0f0f0;
+  --color-muted-ink: #94a3b8;
+  --color-timeline-red: #7c83fd;
+  --color-accent-muted: #4e5ba6;
+  --color-success: #2ecc71;
+  --color-danger: #e74c3c;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0e14;
+  color: #f0f0f0;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}

@@ -466,6 +466,23 @@ export function TimelineContainer({
           })}
         </div>
       </div>
+
+      <p className="border-t border-paper-border px-5 pb-3 pt-3 text-[11px] leading-relaxed text-muted-ink">
+        <span className="font-semibold text-ink">Penafian:</span>{" "}
+        Seluruh informasi pada garis waktu ini dapat diubah sewaktu-waktu dan
+        mungkin mengandung ketidakakuratan. Untuk koreksi atau penyuntingan,
+        silakan hubungi{" "}
+        <a
+          href="mailto:victor@paroin.id"
+          className="font-medium text-ink underline decoration-paper-border underline-offset-2 hover:text-timeline-red"
+        >
+          victor@paroin.id
+        </a>
+        .
+      </p>
+      <p className="px-5 pb-5 text-center text-[11px] text-muted-ink">
+        © {new Date().getFullYear()} by victorwick
+      </p>
     </section>
   );
 }
